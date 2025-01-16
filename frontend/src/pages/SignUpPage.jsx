@@ -35,11 +35,17 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className="min-h-screen grid lg:grid-cols-2">
-      {/* left side */}
+    <div
+      className="min-h-screen grid lg:grid-cols-2"
+      style={{
+        transform: "scale(0.75)",
+        transformOrigin: "center",
+      }}
+    >
+      {/* Left side */}
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
         <div className="w-full max-w-md space-y-8">
-          {/* LOGO */}
+          {/* Logo */}
           <div className="text-center mb-8">
             <div className="flex flex-col items-center gap-2 group">
               <div
@@ -142,8 +148,7 @@ const SignUpPage = () => {
         </div>
       </div>
 
-      {/* right side */}
-
+      {/* Right side */}
       <AuthImagePattern
         title="Join our community"
         subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
@@ -151,4 +156,5 @@ const SignUpPage = () => {
     </div>
   );
 };
+
 export default SignUpPage;

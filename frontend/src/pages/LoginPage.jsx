@@ -18,7 +18,13 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="h-screen grid lg:grid-cols-2">
+    <div
+      className="h-screen grid lg:grid-cols-2 overflow-x-hidden bg-base-200"
+      style={{
+        transform: "scale(0.75)",
+        transformOrigin: "center",
+      }}
+    >
       {/* Left Side - Form */}
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
         <div className="w-full max-w-md space-y-8">
@@ -116,4 +122,5 @@ const LoginPage = () => {
     </div>
   );
 };
+
 export default LoginPage;
